@@ -5,7 +5,7 @@ The addon requires the <a href="http://www.itthinx.com/plugins/groups-forums/" t
  <a href="https://www.wordpress.org/plugins/groups/" target="_blank">Groups</a> plugins to be installed and activated.
 
 ## Default email subject
-The default email subject is 
+The default email subject is <br/>
 'A new topic has been published on ' . $forum->name . '.';
 and can be modified with the filter gf_groups_notifications_subject like this:
 
