@@ -119,19 +119,19 @@ Class Gf_Groups_Notifications {
 		if ( $members ) {
 			$default_subject = '';
 			$default_message = '';
-	
+
 			$default_subject = esc_html( 'A new topic has been published on ' );
 			$default_subject .= $forum->name;
-	
+
 			$default_message .= 'Hi, <p>A new topic has been published on ' . $forum->name . '.';
 			$default_message .= esc_html( ' You can check it out by following ' );
 			$default_message .= '<a href= "' . esc_attr( get_term_link( $forum ) ) . '" target="_blank" >';
 			$default_message .= esc_html( 'this link' );
 			$default_message .= '</a></p>';
 			$default_message .= 'Cheers';
-	
+
 			$headers = array('Content-Type: text/html; charset=UTF-8');
-	
+
 			$subject = apply_filters( 'gf_groups_notifications_subject', $default_subject, $forum );
 			$message = apply_filters( 'gf_groups_notifications_message', $default_message, $forum );
 			
