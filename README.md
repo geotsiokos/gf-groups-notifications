@@ -19,9 +19,9 @@ function example_gf_groups_notifications_subject( $subject, $forum ) {<br/>
 ## Default email message
 The default email message is<br/>
 $message = 'Hi, <p>A new topic has been published on ' . $forum->name . '.';<br/>
-$message .= esc_html( ' You can check it out by following ' );<br/>
-$message .= '<a href= "' . esc_attr( get_term_link( $forum ) ) . '" target="_blank" >';<br/>
-$message .= esc_html( 'this link' );<br/>
+$message .= ' You can check it out by following ';<br/>
+$message .= '<a href= "' . get_term_link( $forum ) . '" target="_blank" >';<br/>
+$message .= 'this link';<br/>
 $message .= '</a></p>';<br/>
 $message .= 'Cheers';<br/>
 and can be modified with the filter gf_groups_notifications_message like this:<br/>
