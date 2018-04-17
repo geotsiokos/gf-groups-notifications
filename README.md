@@ -20,7 +20,7 @@ The default email message can be modified with the filter gf_groups_notification
 Example<br/>
 add_filter( 'gf_groups_notifications_message', 'example_gf_groups_notifications_message', 10, 2 );<br/>
 function example_gf_groups_notifications_subject( $message, $forum ) {<br/>
-        $message = 'You can customize the message and use the $forum WP_Term Object to get the forum name, link, etc.$<br/>
+        $message = 'You can customize the message and use the $forum WP_Term Object to get the forum name, link, etc...';<br/>
         return $message;<br/>
 }
 
